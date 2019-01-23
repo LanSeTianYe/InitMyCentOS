@@ -4,11 +4,17 @@ start_description="init script statr at  $(date +"%Y-%m-%d %H:%M:%S")"
 start_time=$(date +"%s")
 
 # init yum software
-source ./yum/init.sh
+cd ./yum
+source ./init.sh
+cd ../
 # init software
-source ./software/init.sh
+cd ./software/
+source ./init.sh
+cd ../
 # init systemconfig 
-source ./systemconfig/init.sh
+cd ./systemconfig/
+source ./init.sh
+cd ../
 
 end_time=$(date +"%s")
 cost_time=$(( end_time - start_time ))

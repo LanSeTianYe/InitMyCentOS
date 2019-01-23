@@ -6,10 +6,9 @@ echo "${description} statr at " $(date +"%Y-%m-%d %H:%M:%S")
 echo "==================="
 start_date=$(date +"%s")
 
-# init yum software
-echo ""
-echo "do nothing ..."
-sleep 2
+# init system config 
+
+source ./vimconfig.sh
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
