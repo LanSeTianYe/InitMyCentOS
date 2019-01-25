@@ -18,7 +18,7 @@ yum -y install curl
 ## yum-utils
 yum -y yum-utils
 ## screen 
-yum -y install screen
+yum -y install tmux
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
