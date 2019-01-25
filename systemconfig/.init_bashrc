@@ -1,0 +1,2 @@
+# init alias
+alias ls="clear;ls -a --color=auto"

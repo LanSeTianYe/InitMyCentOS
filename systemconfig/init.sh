@@ -8,7 +8,8 @@ start_date=$(date +"%s")
 
 # init system config 
 
-source ./vimconfig.sh
+source ./init_vimrc.sh
+source ./init_bashrc.sh
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
