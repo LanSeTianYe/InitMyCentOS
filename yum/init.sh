@@ -13,10 +13,12 @@ yum -y install yum-plugin-fastestmirror
 yum -y install bash-completion
 ## network throughput tool 
 yum -y install iftop
-# curl
+## curl
 yum -y install curl 
-# yun-utils
+## yum-utils
 yum -y yum-utils
+## screen 
+yum -y install screen
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
