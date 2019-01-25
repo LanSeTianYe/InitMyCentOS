@@ -7,15 +7,16 @@ echo "==================="
 start_date=$(date +"%s")
 
 # init yum software
-# fast mirror plugin
+## fast mirror plugin
 yum -y install yum-plugin-fastestmirror
-source /etc/profile
-# bash auto complete plugin
+## bash auto complete plugin
 yum -y install bash-completion
-source /etc/profile
-# network throughput tool 
+## network throughput tool 
 yum -y install iftop
-source /etc/profile
+# curl
+yum -y install curl 
+# yun-utils
+yum -y yum-utils
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))

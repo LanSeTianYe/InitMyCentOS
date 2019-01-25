@@ -7,10 +7,12 @@ cost_time=$(( end_date - start_date ))
 echo "==================="
 start_date=$(date +"%s")
 
-# init yum software
-echo ""
-echo "do nothing ..."
-sleep 2
+# init software
+## init docker and docker-compose
+cd ./docker/
+source ./install_docker.sh
+cd ..
+
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
