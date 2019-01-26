@@ -4,7 +4,7 @@ init_rc_file="${HOME}/.init_vimrc"
 
 # if flie not exists create it
 if [ ! -f ${rc_file} ];then
-  touch ${init_rc_file}
+  touch ${rc_file}
 fi
 
 cp -f ./.init_vimrc ${init_rc_file}

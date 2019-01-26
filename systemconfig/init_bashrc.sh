@@ -4,7 +4,7 @@ init_bashrc_file="${HOME}/.init_bashrc"
 
 # if flie not exists create it
 if [ ! -f ${bashrc_file} ];then
-  touch ${init_bashrc_file}
+  touch ${bashrc_file}
 fi
 
 cp -f ./.init_bashrc ${init_bashrc_file}
