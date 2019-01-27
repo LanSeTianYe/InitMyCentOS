@@ -7,6 +7,8 @@ cost_time=$(( end_date - start_date ))
 echo "==================="
 start_date=$(date +"%s")
 
+# remove 
+yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
 # install  
 # install docker-ce
 yum install -y device-mapper-persistent-data lvm2
