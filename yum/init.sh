@@ -7,6 +7,9 @@ echo "==================="
 start_date=$(date +"%s")
 
 # init yum software
+
+# install vim 
+yum -y install vim
 ## fast mirror plugin
 yum -y install yum-plugin-fastestmirror
 ## bash auto complete plugin
