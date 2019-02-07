@@ -14,6 +14,8 @@ yum -y install vim
 yum -y install yum-plugin-fastestmirror
 ## bash auto complete plugin
 yum -y install bash-completion
+## fish a command interactive tool
+yum -y install fish
 ## network throughput tool 
 yum -y install iftop
 ## curl
