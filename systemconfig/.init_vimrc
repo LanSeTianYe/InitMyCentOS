@@ -1,1 +1,18 @@
+"show line bumber
 set number
+" height light search content 
+set hlsearch
+" auto autoindent when click enter key
+set autoindent
+" auto backup
+set nobackup
+" show info in the right of bottom
+set ruler
+" show currl model in bottom
+set showmode
+" use backspace can delete any character
+set backspace=2
+" show syntax color
+syntax on
+" bg color(light or dark)
+set bg=dark
