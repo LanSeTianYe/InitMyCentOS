@@ -8,18 +8,24 @@ start_date=$(date +"%s")
 
 # init yum software
 
+# var
+system_version=$(cat /etc/redhat-release | cut -d " " -f 4 | cut -d "." -f 1)
+
 # install vim 
 yum -y install vim
 ## fast mirror plugin
 yum -y install yum-plugin-fastestmirror
+## curl
+yum -y install curl 
 ## bash auto complete plugin
 yum -y install bash-completion
 ## fish a command interactive tool
+cd /etc/yum.repos.d/
+wget "http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_${system_version}/shells:fish:release:2.repo"
+cd -
 yum -y install fish
 ## network throughput tool 
 yum -y install iftop
-## curl
-yum -y install curl 
 ## yum-utils
 yum -y yum-utils
 ## screen 
