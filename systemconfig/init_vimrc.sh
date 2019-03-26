@@ -12,3 +12,5 @@ cp -f ./.init_vimrc ${init_rc_file}
 if [ `grep -c "${init_rc_file}" ${rc_file}` -eq '0' ];then
   echo "source ${init_rc_file}" >> ${rc_file}
 fi
+
+source ${rc_file}
