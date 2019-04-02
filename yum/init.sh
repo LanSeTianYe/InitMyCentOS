@@ -11,6 +11,9 @@ start_date=$(date +"%s")
 # var
 system_version=$(cat /etc/redhat-release | cut -d " " -f 4 | cut -d "." -f 1)
 
+# installl git
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum install -y git2u-all
 # install vim 
 yum -y install vim
 
