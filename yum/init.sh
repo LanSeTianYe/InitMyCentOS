@@ -12,11 +12,12 @@ start_date=$(date +"%s")
 system_version=$(cat /etc/redhat-release | cut -d " " -f 4 | cut -d "." -f 1)
 
 ## fast mirror plugin
-
 yum -y install yum-plugin-fastestmirror
+
 # installl git
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y git2u-all
+
 # install vim 
 yum -y install vim
 
