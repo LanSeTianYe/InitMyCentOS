@@ -37,7 +37,7 @@ yum -y install bash-completion
 yum -y install iftop
 
 ## yum-utils
-yum -y yum-utils
+yum -y install yum-utils
 
 ## screen 
 yum -y install tmux
