@@ -14,9 +14,15 @@ system_version=$(cat /etc/redhat-release | cut -d " " -f 4 | cut -d "." -f 1)
 ## fast mirror plugin
 yum -y install yum-plugin-fastestmirror
 
+## yum-utils
+yum -y install yum-utils
+
 # installl git
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y git2u-all
+
+# ab
+yum -y install httpd-tools
 
 # install vim 
 yum -y install vim
@@ -35,9 +41,6 @@ yum -y install bash-completion
 
 ## network throughput tool 
 yum -y install iftop
-
-## yum-utils
-yum -y install yum-utils
 
 ## screen 
 yum -y install tmux
