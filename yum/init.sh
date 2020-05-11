@@ -2,7 +2,7 @@
 echo "------------------------------------------------------------------------"
 description="init yum"
 echo "enter the directory $(pwd)"
-echo "${description} statr at " $(date +"%Y-%m-%d %H:%M:%S")
+echo "${description} start at " $(date +"%Y-%m-%d %H:%M:%S")
 echo "==================="
 start_date=$(date +"%s")
 
@@ -32,6 +32,9 @@ yum -y install curl
 
 ## bash auto complete plugin
 yum -y install bash-completion
+
+## jdk
+yum -y install java-1.8.0-openjdk-develk
 
 # ## fish a command interactive tool(annotated because of diffrent shell syntax)
 # cd /etc/yum.repos.d/
