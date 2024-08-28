@@ -1,5 +1,2 @@
-# init alias
-## use `clear` and `ls` replace `ls`, sure than show `ls` info on the top of the window
-alias ls="clear;ls -a --color=auto"
 ## use `grep --color` replace `grep`, sure that the result of search has color
 alias grep='grep --color=auto'

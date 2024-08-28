@@ -48,6 +48,9 @@ yum -y install iftop
 ## screen 
 yum -y install tmux
 
+## tree 
+yum -y install tree
+
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
 echo "==================="
