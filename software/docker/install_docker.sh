@@ -17,6 +17,11 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 
 yum install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
+# docker-compose
+# https://github.com/docker/compose/releases 查看版本
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
