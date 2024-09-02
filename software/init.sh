@@ -17,6 +17,7 @@ cd ..
 cd ./syncthing/
 source ./install_syncthing_server.sh
 
+
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
 echo "==================="
