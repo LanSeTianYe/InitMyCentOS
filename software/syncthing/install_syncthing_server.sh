@@ -8,9 +8,9 @@ echo "==================="
 start_date=$(date +"%s")
 
 # synthing server 
-docker ps -a | grep syncthing | awk '{print $0}' | xargs docker stop
+docker ps -a | grep syncthing | awk '{print $1}' | xargs docker stop
 
-docker ps -a | grep syncthing | awk '{print $0}' | xargs docker rm
+docker ps -a | grep syncthing | awk '{print $1}' | xargs docker rm
 
 docker run -d -p 8384:8384 -p 22000:22000/tcp -p 22000:22000/udp -p 21027:21027/udp \
     -v ~/syncthing:/var/syncthing \

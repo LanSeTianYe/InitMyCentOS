@@ -8,9 +8,9 @@ echo "==================="
 start_date=$(date +"%s")
 
 # synthing server 
-docker ps -a | grep filestash | awk '{print $0}' | xargs docker stop
+docker ps -a | grep filestash | awk '{print $1}' | xargs docker stop
 
-docker ps -a | grep filestash | awk '{print $0}' | xargs docker rm
+docker ps -a | grep filestash | awk '{print $1}' | xargs docker rm
 
 docker-compose up -d
 
