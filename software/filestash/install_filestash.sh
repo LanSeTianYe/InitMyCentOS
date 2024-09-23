@@ -14,7 +14,7 @@ docker ps -a | grep filestash | awk '{print $0}' | xargs docker rm
 
 docker-compose up -d
 
-mkdir ~/filestash && chowni -R 1000:1000 ~/filestash
+mkdir ~/filestash && chown -R 1000:1000 ~/filestash
 
 end_date=$(date +"%s")
 cost_time=$(( end_date - start_date ))
